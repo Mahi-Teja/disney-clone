@@ -18,6 +18,9 @@
     vertical-align: middle;
     
 }
+.ham-icon-btn{
+    display: none;
+}
 .nav-item-link{
     color: rgb(0, 0, 0);
     font-family: NotoSans, NotoSerif, Matterhorn, Helvetica, sans-serif;
@@ -57,7 +60,7 @@
 }
 .container-img{
     height:auto;
-    width: 100%;
+    max-width: 100%;
 }
 /* //Shop Cards */
 .cards-box{
@@ -81,7 +84,7 @@
     margin: 7px;
 }
 .img-box{
-    width: 100%;
+    max-width: 100%;
     margin: 0 3px;
     padding: 1px;
 }
@@ -129,7 +132,7 @@
 }
 .feat-img{
     height: fit-content;
-    width: 100%;
+    max-width: 100%;
     height: 50%;
     margin: 20px 0;
 }
@@ -178,7 +181,7 @@
     text-align: center;
 }
 .holiday-img{
-    width: 100%;
+    max-width: 100%;
     height: 432px;
     object-fit: cover;
     padding: 0 8px;
@@ -227,7 +230,7 @@
     
 }
 .more-img{
-    width: 100%;
+    max-width: 100%;
     height: 50%;
     padding: 8px 16px 8px 0px;
 }
@@ -315,4 +318,113 @@ a{
 }
 li{
     list-style: none;
+}
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+/* For ? */
+@media only screen and (min-width: 768px) {
+  [class*="col-"] {
+    width: 100%;
+  }
+  footer{
+    display: block;
+    text-align: center;
+    clear: both;
+  }
+}
+/* for Mobiles */
+@media screen and (max-width:415px) {
+    .nav-item{
+        display: none;
+    }
+    .nav-logo{
+        display: block;
+        text-align: center;
+    }
+    .ham-icon-btn{
+        display: block;
+        float: left;
+        background: none;
+        border: none;
+        padding: 0.5rem;
+        cursor: pointer;
+    }
+    .ham-icon{
+        height: 2rem;
+        width: 2rem;
+        
+    }
+    .container{
+        width: 100%;
+    }
+    .cards-box{
+        text-align: center;
+        padding: 5px;
+    }
+    .box-card-img{
+        max-width: 100%;
+        height: fit-content;
+    }
+    .card-text{
+        color: #02090f;
+        position: initial;
+    }
+    .feat-ad{
+        width: 100%;
+        padding: 5px;
+        display: inline-block;
+    }
+    .disney-holidays{
+        display: inline-block;
+    }
+    .holiday-cards{
+        width: 100%;
+        padding: 12px 0;
+    }
+    .holiday-img{
+        max-width: 100%;
+        height: auto;
+    }
+    .gradiant{
+        display: none;
+    }
+    .feat-text{
+        height: auto;
+    }
+    .d1{
+        display: none;
+    }
+    .more-ad{
+    max-width: 100%;
+    }
+    .more-desc{
+        height: 15vh;
+    }
+    .foot-nav{
+        display: block;
+        margin: auto;
+        text-align: center;
+
+    }
+    .foot-nav-item{
+        display: block;
+        padding: 12px;
+    }
+    .socials{
+        float: none;
+        padding: 12px;
+    }
+
 }
